@@ -33,6 +33,8 @@ public class PostfixEvaluator {
                 return operand1 * operand2;
             case '/':
                 return operand1 / operand2;
+            default:
+                throw new IllegalArgumentException("Invalid operator: " + operator);
         }
     }
 
